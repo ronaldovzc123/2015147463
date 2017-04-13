@@ -16,12 +16,27 @@ namespace _2015147463
        private string tipoo;
        private DateTime fecha;
 
-       // si pones uno en tipo de bus se tomara como tipo de bus a "bus normal" si pones otro numero tomara a "bus cama"
        public int Tipo
        {
            get { return tipo; }
-           set { if (value == 1) { tipoo = "bus normal"; } else { tipoo = "bus cama"; } }
+
+           set
+           {
+               Random rnd = new Random();
+               int tipo = rnd.Next(0, 2);
+           }
+
+           //set { if (value == 1) { tipoo = "bus normal"; } else { tipoo = "bus cama"; } }
+
        }
+       public void TipoBuss()
+       {
+           if (tipo == 1) { tipoo = "bus normal"; } else { tipoo = "bus cama"; }
+           Console.Write("el tipo de bus es: " + tipoo);
+       }
+       
+
+         
 
        public int NumBus
        {
@@ -72,6 +87,8 @@ namespace _2015147463
         {
             tipo = this.tipo;
         }
+        public Bus()
+        { }
 
     }
 }

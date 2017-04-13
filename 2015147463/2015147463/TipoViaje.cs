@@ -8,24 +8,31 @@ namespace _2015147463
 {
     public  class TipoViaje : Bus 
     {
-        string tipo_viaje;
+        string tipo_viaje { set; get; }
         int _tipobus {set; get;}
 
         public TipoViaje(int tipobus) : base(tipobus)
         {
             _tipobus = tipobus;
+
         }
+         
 
-        // jalamos la variable de tipo de bus int de la clase bus y de acuerdo a la descripcion nominamos que tipo de viaje es
-
-        public string Tipo
+        public void Tipo_viaje() 
         {
-            get { return tipo_viaje; }
-            set { if (_tipobus == 1) { tipo_viaje = "Viaje Normal"; } else { tipo_viaje = "Viaje Cama"; } }
+            //if (_Servicio.Count == 3)
+              //  return;
+
+            if (_tipobus == 1) { tipo_viaje = "Viaje Normal"; } else { tipo_viaje = "Viaje Cama"; }
+
+            Console.WriteLine("el tipo de Viaje es: " + tipo_viaje);
+
         }
-        
 
-
-
+        public TipoViaje() 
+        { }
     }
+
+    
+
 }

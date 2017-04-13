@@ -8,6 +8,9 @@ namespace _2015147463
 {
     public class cliente
     {
+       public cliente()
+        { }
+
         private string nom;
         private string ape;
         private string dni;
@@ -36,11 +39,21 @@ namespace _2015147463
 
           public cliente(string _nom, string _ape, string _dni, int _idclient) 
           {
-              _nom = nom;
-              _ape = ape;
-              _dni = dni;
-              _idclient = clien_id;
+           this.Nom  = _nom ;
+             this.Ape = _ape;
+             this.DNI = _dni;
+             this.IDClien = _idclient;
           }
-       
+
+
+        //  public void Agregar(string nombre, string apell, string dNi, int id)
+         // {
+           //   nom = nombre;
+             // ape = apell;
+             // dni = dNi;
+            //  clien_id = id;
+         // }
+
+
     }
 }

@@ -41,8 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administrativo.cs" />
+    <Compile Include="Bus.cs" />
+    <Compile Include="Encomienda.cs" />
+    <Compile Include="LugarViaje.cs" />
+    <Compile Include="Servicio.cs" />
+    <Compile Include="TipoLugar.cs" />
+    <Compile Include="TipoComprobante.cs" />
+    <Compile Include="TipoPago.cs" />
+    <Compile Include="Transporte.cs" />
+    <Compile Include="cliente.cs" />
+    <Compile Include="Empleado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tipoTripulacion.cs" />
+    <Compile Include="TipoViaje.cs" />
+    <Compile Include="tripulacion.cs" />
+    <Compile Include="Venta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,21 +11,39 @@ namespace _2015147463
         private List<TipoPago> _tipoPago;
         private List<TipoComprobante> _TipoComprobante;
         private List<administrativo> _administrativo;
-        private List<cliente> _Cliente;
+       
+      
         private List<Servicio> _Servicio;
         private DateTime fecha;
 
+        List<cliente> _Cliente = new List<cliente>();
+
+        public Venta()
+        { }
 
         public Venta(int pago, int comprobante, int administrativo, int cliente, int servicio, DateTime fec)
         {
-            _tipoPago = new List<TipoPago>(pago);
-            _TipoComprobante = new List<TipoComprobante>(comprobante);
-            _administrativo = new List<administrativo>(administrativo);
-            _Cliente = new List<cliente> (cliente);
-            _Servicio = new List<Servicio> (servicio);
-            fec = fecha;
+            //_tipoPago = new List<TipoPago>(pago);
+            //_TipoComprobante = new List<TipoComprobante>(comprobante);
+            //_administrativo = new List<administrativo>(administrativo);
+        
+            //_Servicio = new List<Servicio> (servicio);
+            //fec = fecha;
+
+           
         }
 
+        public void Agregar(string nom, string ape, string dni, int id)
+        {
+
+            _Cliente.Add(new cliente(nom, ape,dni, id));
+
+            Console.WriteLine("El nombre del cliente y sus datos son: " + nom + " " + ape + " " + dni + " " + id);
+
+        }
+
+     
+  
         
     }
 }
