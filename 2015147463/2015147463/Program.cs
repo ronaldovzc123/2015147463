@@ -10,7 +10,7 @@ namespace _2015147463
     {
         static void Main(string[] args)
         {
-            Console.Write("sedfsadfs");
+            
         }
     }
 }

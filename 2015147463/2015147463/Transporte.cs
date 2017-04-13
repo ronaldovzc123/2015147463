@@ -22,7 +22,15 @@ namespace _2015147463
                 if (value.Count > 0)
                     _bus = value;
             }
- 
+        }
+
+        public Transporte(int lugar, int cliente, int tipo, int id_ser, List<Bus> buss) : base(id_ser) 
+        {
+            _LugarViaje = new List<LugarViaje>(lugar);
+            _Cliente = new List<cliente>(cliente);
+            _tipoViaje = new List<TipoViaje>(tipo);
+            Bus = buss;
+            id_ser = IDser;
         }
 
     }

@@ -16,22 +16,22 @@ namespace _2015147463
         public string Nom
         {
             get { return nom;}
-            set { if(value != null { nom = value; } }
+            set { if(value != null) { nom = value; } }
         }
          public string Ape
         {
             get { return ape;}
-            set { if(value != null { ape = value; } }
+            set { if(value != null ){ ape = value; } }
         }
          public string DNI
         {
             get { return dni;}
-            set { if(value != null { dni = value; } }
+            set { if(value != null ){ dni = value; } }
         }
           public int IDClien
         {
             get { return clien_id;}
-            set { if(value != null { clien_id = value; } }
+            set { if (value > 0) { clien_id = value; } }
         }
 
           public cliente(string _nom, string _ape, string _dni, int _idclient) 

@@ -6,7 +6,72 @@ using System.Threading.Tasks;
 
 namespace _2015147463
 {
-    class Bus
+   public class Bus
     {
+       private List<tripulacion> _tripulacion;
+       public int NumBuses;
+       private int id_bus;
+       private string descripcion;
+       private int tipo;
+       private string tipoo;
+       private DateTime fecha;
+
+       // si pones uno en tipo de bus se tomara como tipo de bus a "bus normal" si pones otro numero tomara a "bus cama"
+       public int Tipo
+       {
+           get { return tipo; }
+           set { if (value == 1) { tipoo = "bus normal"; } else { tipoo = "bus cama"; } }
+       }
+
+       public int NumBus
+       {
+           get { return NumBuses; }
+           set { if (value > 0) { NumBuses = value; } }
+       }
+
+       public int IdBus
+       {
+           get { return id_bus; }
+           set { if (value > 0) { id_bus = value; } }
+       }
+       public string Descrip
+       {
+           get { return descripcion; }
+           set { if (value != null) { descripcion = value; } }
+       }
+       public DateTime Fecha
+       {
+           get { return fecha; }
+           set { fecha = DateTime.Now ; }
+       }
+       // contar la tripulacion
+
+       public List<tripulacion> Tripulacion
+       {
+           get { return _tripulacion; }
+
+           set
+           {
+               if (value.Count > 0)
+                   _tripulacion = value;
+           }
+       }
+
+       public Bus(string descrip, int idBus, DateTime Fec, int numB, List<tripulacion> trip, string tipooo) 
+          {
+              descrip = descripcion;
+              idBus = id_bus;
+              Fec = fecha;
+              numB = NumBus;
+              trip = Tripulacion;
+              tipoo = tipooo;
+            
+          }
+
+        public Bus(int tipo) 
+        {
+            tipo = this.tipo;
+        }
+
     }
 }

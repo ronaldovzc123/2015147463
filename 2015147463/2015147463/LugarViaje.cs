@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace _2015147463
 {
-    class LugarViaje
+    public class LugarViaje
     {
+        private int cod;
+        private string provincia;
+        private List<TipoLugar> _tipoLugar;
+
+        public LugarViaje(int tpl, int encom, int codigo, string pro) 
+        {
+           _tipoLugar = new List<TipoLugar>(tpl);
+           cod = codigo;
+           provincia = pro;
+        }
+
     }
 }
