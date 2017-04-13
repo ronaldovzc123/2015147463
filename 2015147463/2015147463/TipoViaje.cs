@@ -26,6 +26,7 @@ namespace _2015147463
             if (_tipobus == 1) { tipo_viaje = "Viaje Normal"; } else { tipo_viaje = "Viaje Cama"; }
 
             Console.WriteLine("el tipo de Viaje es: " + tipo_viaje);
+            Console.ReadLine();
 
         }
 

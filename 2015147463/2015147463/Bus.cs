@@ -32,7 +32,8 @@ namespace _2015147463
        public void TipoBuss()
        {
            if (tipo == 1) { tipoo = "bus normal"; } else { tipoo = "bus cama"; }
-           Console.Write("el tipo de bus es: " + tipoo);
+           Console.WriteLine("el tipo de bus es: " + tipoo);
+           Console.ReadLine();
        }
        
 

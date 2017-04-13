@@ -21,16 +21,20 @@ namespace _2015147463
             venta.Agregar("Hernan", "Zelada", "999234423", 2); //pasajero2
             venta.Agregar("Leoncio", "Zelada", "998827473", 3); //pasajero3
 
-            venta.Agregar("Martha", "Cabezudo", "9553425", 04); //encomienda1
-            venta.Agregar("Ñato", "Zelada", "234533453", 05); //encomienda2
+           
 
             var tipoBus = new Bus();
             var tipoViaje = new TipoViaje();
+            var encomienda = new Encomienda();
 
             tipoViaje.Tipo_viaje();
             tipoBus.TipoBuss();
-           
-            
+
+            encomienda.AgregarEncomienda("Martha", "Cabezudo", "1098128");//encomienda1
+            encomienda.AgregarEncomienda("Ñato", "Zelada", "234533453");//encomienda2
+
+
+  
             
 
 

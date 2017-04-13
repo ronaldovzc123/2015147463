@@ -39,6 +39,7 @@ namespace _2015147463
             _Cliente.Add(new cliente(nom, ape,dni, id));
 
             Console.WriteLine("El nombre del cliente y sus datos son: " + nom + " " + ape + " " + dni + " " + id);
+            Console.ReadLine();
 
         }
 

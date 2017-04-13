@@ -40,6 +40,8 @@ namespace _2015147463
             id = idServicio;
         }
 
-
+        public Servicio()
+        {
+        }
     }
 }
